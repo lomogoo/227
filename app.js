@@ -125,6 +125,8 @@ class Route227App {
             modal.classList.add('active');
             errorDiv.textContent = '';
             
+            this.isScanning = true;
+            
             // カメラストリームを取得
             this.videoStream = await navigator.mediaDevices.getUserMedia({
                 video: {
